@@ -1,10 +1,12 @@
 # Summary
 
 - [About](./ABOUT.md)
-- [Introduction](./INTRODUCTION.md)
-  - [Installing](./introduction/INSTALLATION.md)
-  - [Using](./introduction/USING.md)
-  - [Cheat Sheet](./introduction/CHEATSHEET.md)
+  - [Terminology](./about/TERMINOLOGY.md)
+  - [Ecosystem](./about/ECOSYSTEM.md)
+- [Command Line](./APPLICATION.md)
+  - [Installing](./application/INSTALLATION.md)
+  - [Using](./application/USING.md)
+  - [Cheat Sheet](./application/CHEATSHEET.md)
 - [Management](./MANAGEMENT.md)
   - [Targets](./management/TARGETS.md)
   - [Repositories](./management/REPOSITORIES.md)
