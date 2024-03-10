@@ -26,7 +26,7 @@ Read the step-by-step guide here:
 
 Find the source code here:
 
-[Asciicast Example on GitHub](https://github.com/ntr1x/ggcode-example-autocast)
+[Asciicast Example on GitHub](https://github.com/ntr1x/ggcode-example-asciicast)
 
 
 ## Repositories
@@ -39,13 +39,13 @@ Find the source code here:
 
 [Standard Library on GitHub](https://github.com/ntr1x/ggcode-repo-central)
 
-### GGCode Docker
+### GGCode Compose
 
 A collection of scrolls with docker compose manifests. It contains a DSL that will help you to bootstrap databases, message brokers, monitoring tools, proxies in a few rows. Use it as a dependency if you need to generate Docker Compose artifacts.
 
 Find the source code here:
 
-[Docker Library on GitHub](https://github.com/ntr1x/ggcode-repo-docker)
+[Compose Library on GitHub](https://github.com/ntr1x/ggcode-repo-compose)
 
 ### GGCode Spring
 
