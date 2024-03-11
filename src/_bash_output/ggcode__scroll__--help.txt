@@ -1,0 +1,12 @@
+Manage set of scrolls
+
+Usage: ggcode scroll [COMMAND]
+
+Commands:
+  list    List scrolls
+  add     Add a scroll
+  remove  Remove a scroll
+  help    Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help

@@ -9,7 +9,7 @@
     - [Initialize project](./using/init.md)
     - [Install dependencies](./using/install.md)
     - [Manage repositories](./using/repository.md)
-    - [Manage targets](./using/action.md)
+    - [Manage targets](./using/target.md)
     - [Manage scrolls](./using/scroll.md)
     - [Manage actions](./using/action.md)
     - [Generate](./using/generate.md)

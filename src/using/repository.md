@@ -4,10 +4,18 @@ You can manage dependencies using `ggcode repository` command.
 
 ## Table of contents
 
+- [Getting help](#getting-help)
 - [Listing repositories](#listing-repositories)
 - [Adding repository](#adding-repository)
 - [Removing repository](#removing-repository)
-- [Getting help](#getting-help)
+
+## Getting help
+
+```bash
+$ ggcode repository --help
+
+{{#include ../_bash_output/ggcode__repository__--help.txt}}
+```
 
 ## Listing repositories
 
@@ -32,7 +40,6 @@ Add a repository:
 Adding repository in interactive mode:
 
 ```bash
-# Initialize project
 $ ggcode repository add
 ✔ Name of the repository: · compose
 ✔ URI of the repository: · git@github.com:ntr1x/ggcode-repo-compose.git
@@ -44,7 +51,7 @@ $ ggcode repository add
 Add reposuitory by specifying options as command parameters:
 
 ```bash
-ggcode repository add \
+$ ggcode repository add \
   --name compose \
   --uri git@github.com:ntr1x/ggcode-repo-compose.git
 ```
@@ -66,7 +73,7 @@ $ ggcode install
 ##### Option 1, Interactive mode
 
 ```bash
-ggcode repository remove
+$ ggcode repository remove
 ✔ Name of the repository: · compose
 [SUCCESS] Have fun!
 ```
@@ -74,14 +81,6 @@ ggcode repository remove
 ##### Option 2, Non-interactive mode
 
 ```bash
-ggcode repository remove --name compose
+$ ggcode repository remove --name compose
 [SUCCESS] Have a nice day!
-```
-
-## Getting help
-
-```bash
-$ ggcode init --help
-
-{{#include ../_bash_output/ggcode__repository__--help.txt}}
 ```

@@ -27,3 +27,93 @@ You can find a lot of useful repositories to boost your productivity. With our r
 **5. Pre-defined helpers**
 
 Didn't find a suitable template package or need some overrides for an existing one? Not a big deal! Most of our repositories contain not only templates and configs but also Lua models and functions organized in libraries.
+
+## Trivial example
+
+This is a trivial example of how to bootstrap and configure PostgreSQL and pgAdmin with suitable defaults and some overrides:
+
+#### Step 1
+
+Add to your project `ggcode-info.yaml` file with this content:
+
+```yaml
+name: example
+actions:
+- name: generate
+  path: actions/generate.luau
+repositories:
+- name: central
+  uri: git@github.com:ntr1x/ggcode-repo-central.git
+- name: compose
+  uri: git@github.com:ntr1x/ggcode-repo-compose.git
+targets:
+- name: '@app'
+  path: app
+```
+
+#### Step 2
+
+Add an action script `actions/generate.luau` into your project:
+
+```lua
+local ggcode = require('ggcode')
+local pg = require('compose/postgres')
+local pgadmin = require('compose/pgadmin')
+local keycloak = require('compose/keycloak')
+
+local database_keycloak = {
+  name = 'keycloak',
+  username = 'keycloak',
+  password = 'keycloak'
+}
+
+ggcode.generate 'compose/keycloak' {
+  target = '@app',
+  variables = {
+    database = keycloak.database:from(database_keycloak)
+  }
+}
+
+ggcode.generate 'compose/postgres' {
+  target = '@app',
+  variables = {
+    databases = {
+      pg.database:from(database_keycloak),
+    }
+  }
+}
+
+ggcode.generate 'compose/pgadmin' {
+  target = '@app',
+  variables = {
+    servers = {
+      pgadmin.server:from(database_keycloak),
+    }
+  }
+}
+
+ggcode.generate 'compose/compose' {
+    target = '@app',
+    variables = {
+        config = {
+            include = {
+                { path = 'compose/env/env_postgres.compose.yaml' },
+                { path = 'compose/env/env_pgadmin.compose.yaml' },
+                { path = 'compose/env/env_keycloak.compose.yaml' },
+            }
+        }
+    }
+}
+```
+
+#### Step 3
+
+Execute action to bootstrap your environment
+
+```bash
+# Install dependencies
+ggcode install
+
+# Generate compose manifests
+ggcode run @/generate
+```
