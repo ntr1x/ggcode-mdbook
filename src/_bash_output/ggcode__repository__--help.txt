@@ -1,0 +1,12 @@
+Manage set of repositories
+
+Usage: ggcode repository [COMMAND]
+
+Commands:
+  add     Add a repository
+  remove  Remove a repository
+  list    List repositories
+  help    Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help

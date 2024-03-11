@@ -1,0 +1,6 @@
+Recursively fetches dependent repositories
+
+Usage: ggcode install
+
+Options:
+  -h, --help  Print help
