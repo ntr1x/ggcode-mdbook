@@ -1,6 +1,6 @@
 # Terminology
 
-We conceptualize the application development process as a superposition of code and configuration blocks. Some of them are huge, and sometimes it is not so trivial to reproduce these blocks manually. In this case we roll them down in archives called scrolls. Later you can read and apply the content of these archives just like a fairy tale wizard reading spells from his magical scrolls.
+We conceptualize the application development process as a superposition of code and configuration blocks. Some of them are huge, and sometimes it is not so trivial to reproduce these blocks manually. In this case we roll them down in archives called `scrolls`. Later you can read and apply the content of these archives just like a fairy tale wizard reading spells from his magical scrolls.
 
 Reading our documentation, you will encounter several concepts described in the list below.
 

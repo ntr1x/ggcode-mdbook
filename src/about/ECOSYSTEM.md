@@ -61,4 +61,4 @@ A collection of scripts and a DSL for generation of [Asciicast Files](https://do
 
 Find the source code here:
 
-[Ansiicast Library on GitHub](https://github.com/ntr1x/ggcode-repo-autocast)
+[Ansiicast Library on GitHub](https://github.com/ntr1x/ggcode-repo-asciicast)
