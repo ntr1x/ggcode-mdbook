@@ -14,7 +14,18 @@ You can manage dependencies using `ggcode repository` command.
 ```bash
 $ ggcode repository --help
 
-{{#include ../_bash_output/ggcode__repository__--help.txt}}
+Manage set of repositories
+
+Usage: ggcode repository [COMMAND]
+
+Commands:
+  add     Add a repository
+  remove  Remove a repository
+  list    List repositories
+  help    Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help
 ```
 
 ## Listing repositories
@@ -25,7 +36,7 @@ $ ggcode repository list
 ┌───┬─────────┬──────────────────────────────────────────────┐
 │ # │ Name    │ URI                                          │
 ├───┼─────────┼──────────────────────────────────────────────┤
-│ 1 │ central │ git@github.com:ntr1x/ggcode-repo-central.git │
+│ 1 │ core │ git@github.com:ntr1x/ggcode-repo-core.git │
 └───┴─────────┴──────────────────────────────────────────────┘
 ```
 
@@ -41,8 +52,10 @@ Adding repository in interactive mode:
 
 ```bash
 $ ggcode repository add
+
 ✔ Name of the repository: · compose
 ✔ URI of the repository: · git@github.com:ntr1x/ggcode-repo-compose.git
+
 [SUCCESS] Good seeing you!
 ```
 
@@ -54,6 +67,8 @@ Add reposuitory by specifying options as command parameters:
 $ ggcode repository add \
   --name compose \
   --uri git@github.com:ntr1x/ggcode-repo-compose.git
+
+[SUCCESS] Have a nice day!
 ```
 
 #### Step 2
@@ -63,8 +78,9 @@ Install new repository using `ggcode install` command:
 ```bash
 $ ggcode install
 
-▪▪▪▪▪ [DONE] Repository `git@github.com:ntr1x/ggcode-repo-central.git` cloned into the `ggcode_modules/central` directory.
+▪▪▪▪▪ [DONE] Repository `git@github.com:ntr1x/ggcode-repo-core.git` cloned into the `ggcode_modules/core` directory.
 ▪▪▪▪▪ [DONE] Repository `git@github.com:ntr1x/ggcode-repo-compose.git` cloned into the `ggcode_modules/compose` directory.
+
 [SUCCESS] Have a nice day!
 ```
 
@@ -74,7 +90,9 @@ $ ggcode install
 
 ```bash
 $ ggcode repository remove
+
 ✔ Name of the repository: · compose
+
 [SUCCESS] Have fun!
 ```
 
@@ -82,5 +100,6 @@ $ ggcode repository remove
 
 ```bash
 $ ggcode repository remove --name compose
+
 [SUCCESS] Have a nice day!
 ```

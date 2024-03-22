@@ -6,11 +6,11 @@ As you know, GGCode is not only an application but also a package manager and di
 
 ### Online Store
 
-This example demonstrates how to use GGCode Spring, Docker, and Central repositories together. Use it to bootstrap a local environment with Postgres, PGAdmin, Kafka, KafkaUI, and HaProxy, along with a multi-module Spring Boot project featuring Product Catalog, Customer Database, Customer Basket, and specialized Payments microservices.
+This example demonstrates how to use GGCode Spring, Compose, and Core repositories together. Use it to bootstrap a local environment with Postgres, PGAdmin, Kafka, KafkaUI, and HaProxy, along with a multi-module Spring Boot project featuring Product Catalog, Customer Database, Customer Basket, and specialized Payments microservices.
 
 Read the step-by-step guide here:
 
-[Developing Online Store](./guide/STORE.md)
+[Developing Online Store](../guide/store.md)
 
 Find the source code here:
 
@@ -22,7 +22,7 @@ This example demonstrates how to generate terminal demos (actually [Asciicast Fi
 
 Read the step-by-step guide here:
 
-[Generating Terminal Demos](./guide/ASCIICAST.md)
+[Generating Terminal Demos](../guide/asciicast.md)
 
 Find the source code here:
 
@@ -31,13 +31,13 @@ Find the source code here:
 
 ## Repositories
 
-### GGCode Central
+### GGCode Core
 
 It is the place where our standard library is located. Use it as a dependency in your projects.
 
 Find the source code here:
 
-[Standard Library on GitHub](https://github.com/ntr1x/ggcode-repo-central)
+[Core Library on GitHub](https://github.com/ntr1x/ggcode-repo-core)
 
 ### GGCode Compose
 

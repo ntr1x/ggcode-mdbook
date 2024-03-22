@@ -122,10 +122,10 @@ ggcode run @/generate
 
 This example demonstrates how to use GGCode Spring, Compose, and Core repositories together. Use it to bootstrap a local environment with Postgres, PGAdmin, Kafka, KafkaUI, and HaProxy, along with a multi-module Spring Boot project featuring Product Catalog, Customer Database, Customer Basket, and specialized Payments microservices.
 
-[Online Store](./guide/STORE.md)
+[Developing Online Store](./guide/store.md)
 
 ### Terminal Demos
 
 This example demonstrates how to generate terminal demos (actually [Asciicast Files](https://docs.asciinema.org/manual/asciicast/v2/) that may be converted to GIFs using [Asciinema Gif Generator](https://docs.asciinema.org/manual/agg/) tool). We use it to generate GGCode demos for these instructions.
 
-[Terminal Demos](./guide/ASCIICAST.md)
+[Recording Terminal Demos](./guide/asciicast.md)

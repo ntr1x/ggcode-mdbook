@@ -11,14 +11,20 @@ You will have to call `ggcode install` sometimes.
 ```bash
 $ ggcode install
 
-▪▪▪▪▪ [DONE] Repository `git@github.com:ntr1x/ggcode-repo-central.git` cloned into the `ggcode_modules/central` directory.
+▪▪▪▪▪ [DONE] Repository `git@github.com:ntr1x/ggcode-repo-core.git` cloned into the `ggcode_modules/core` directory.
+
 [SUCCESS] Have a nice day!
 ```
 
 ## Getting help
 
 ```bash
-$ ggcode init --help
+$ ggcode install --help
 
-{{#include ../_bash_output/ggcode__install__--help.txt}}
+Recursively fetches dependent repositories
+
+Usage: ggcode install
+
+Options:
+  -h, --help  Print help
 ```

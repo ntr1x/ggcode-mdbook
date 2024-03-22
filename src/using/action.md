@@ -14,13 +14,25 @@
 ```bash
 $ ggcode action --help
 
-{{#include ../_bash_output/ggcode__action__--help.txt}}
+Manage set of runnable actions
+
+Usage: ggcode action [COMMAND]
+
+Commands:
+  list    List runnable actions
+  add     Add an action
+  remove  Remove a runnable action
+  help    Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help
 ```
 
 ## Listing actions
 
 ```bash
 $ ggcode action list
+
 ┌───┬────────┬───────────────────┐
 │ # │ Name   │ Path              │
 ├───┼────────┼───────────────────┤
@@ -38,8 +50,10 @@ Adding action in interactive mode:
 
 ```bash
 ggcode action add
+
 ✔ Name of the runnable action · test
 ✔ Relative inner path to the runnable action file · actions/test
+
 [SUCCESS] Bye for now.
 ```
 
@@ -51,6 +65,8 @@ Adding action by specifying options as command parameters:
 $ ggcode action add \
   --name test \
   --path actions/test
+
+[SUCCESS] Ciao.
 ```
 
 ## Removing action
@@ -59,7 +75,9 @@ $ ggcode action add \
 
 ```bash
 $ ggcode action remove
+
 ✔ Name of the runnable action: · test
+
 [SUCCESS] Take care.
 ```
 
@@ -67,5 +85,6 @@ $ ggcode action remove
 
 ```bash
 $ ggcode action remove --name test
+
 [SUCCESS] Bye for now.
 ```

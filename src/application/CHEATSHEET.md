@@ -46,10 +46,10 @@ ggcode repository list
 ggcode repository add
 
 # Add a repository (one-liner)
-ggcode repository add --name central --uri git@github.com:ntr1x/ggcode-repo-central.git
+ggcode repository add --name core --uri git@github.com:ntr1x/ggcode-repo-core.git
 
 # Remove known repository (one-liner)
-ggcode repository remove --name central
+ggcode repository remove --name core
 
 # Do not forget to refresh deps at the end
 ggcode install

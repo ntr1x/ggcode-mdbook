@@ -21,11 +21,13 @@ Initialize project by specifying options in interactive mode:
 ```bash
 # Initialize project
 $ ggcode init
+
 ✔ The name of your project · example
-✔ Should we add central repository? · yes
+✔ Should we add core repository? · yes
 ✔ Should we add more repositories? · no
 ✔ Should we register working directory as `@` target? · yes
 ✔ Should we add more targets? · no
+
 [SUCCESS] Take care.
 ```
 
@@ -38,8 +40,10 @@ Initialize project by specifying options as command parameters:
 ```bash
 ggcode init \
   --name example \
-  --repository central:git@github.com:ntr1x/ggcode-repo-central.git \
+  --repository core:git@github.com:ntr1x/ggcode-repo-core.git \
   --target @:.
+
+[SUCCESS] Take care.
 ```
 
 ## Getting help
@@ -47,5 +51,17 @@ ggcode init \
 ```bash
 $ ggcode init --help
 
-{{#include ../_bash_output/ggcode__init__--help.txt}}
+Creates a ggcode-info.yaml file
+
+Usage: ggcode init [OPTIONS]
+
+Options:
+  -n, --name <String>               Project name
+  -r, --repository [<Name:URI>...]  Add a repository. Usage examples:
+                                    	--repository core:git@github.com:ntr1x/ggcode-repo-core.git
+                                    	--repository compose:https://github.com/ntr1x/ggcode-repo-compose.git
+  -t, --target [<Name:Path>...]     Add a target. Usage examples:
+                                    	--target @:.
+                                    	--target app:../path/to/my/app
+  -h, --help                        Print help
 ```

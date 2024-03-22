@@ -14,7 +14,18 @@
 ```bash
 $ ggcode target --help
 
-{{#include ../_bash_output/ggcode__target__--help.txt}}
+Manage set of targets
+
+Usage: ggcode target [COMMAND]
+
+Commands:
+  add     Add a target
+  remove  Remove a target
+  list    List targets
+  help    Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help
 ```
 
 ## Listing targets
@@ -39,8 +50,10 @@ Adding target in interactive mode:
 
 ```bash
 $ ggcode target add
+
 ✔ Name of the target: · @target
 ✔ Path to the target: · generation/results
+
 [SUCCESS] Have fun!
 ```
 
@@ -52,6 +65,8 @@ Add target by specifying options as command parameters:
 $ ggcode target add \
   --name @target \
   --path generation/results
+
+[SUCCESS] Have fun!
 ```
 
 ## Removing target
@@ -60,7 +75,9 @@ $ ggcode target add \
 
 ```bash
 $ ggcode target remove
+
 ✔ Name of the target: · @target
+
 [SUCCESS] Good seeing you!
 ```
 
@@ -68,5 +85,6 @@ $ ggcode target remove
 
 ```bash
 $ ggcode target remove --name @target
+
 [SUCCESS] Bye for now.
 ```

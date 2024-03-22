@@ -6,15 +6,26 @@
 
 - [Getting help](#getting-help)
 - [Listing scrolls](#listing-scrolls)
-- [Adding target](#adding-scroll)
-- [Removing target](#removing-scroll)
+- [Adding scroll](#adding-scroll)
+- [Removing scroll](#removing-scroll)
 
 ## Getting help
 
 ```bash
 $ ggcode scroll --help
 
-{{#include ../_bash_output/ggcode__scroll__--help.txt}}
+Manage set of scrolls
+
+Usage: ggcode scroll [COMMAND]
+
+Commands:
+  list    List scrolls
+  add     Add a scroll
+  remove  Remove a scroll
+  help    Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help
 ```
 
 ## Listing scrolls
@@ -59,8 +70,10 @@ Adding scroll in interactive mode:
 
 ```bash
 $ ggcode scroll add
+
 ✔ Name of the scroll: · readme
 ✔ Relative inner path to the scroll directory: · scrolls/readme
+
 [SUCCESS] Keep in touch.
 ```
 
@@ -72,6 +85,8 @@ Adding scroll by specifying options as command parameters:
 $ ggcode scroll add \
   --name readme \
   --path scrolls/readme
+
+[SUCCESS] Ciao.
 ```
 
 ## Removing scroll
@@ -80,8 +95,10 @@ $ ggcode scroll add \
 
 ```bash
 $ ggcode scroll remove
+
 ✔ Name of the scroll to remove: · readme
 ✔ Remove also a scroll directory? · yes
+
 [SUCCESS] Have a nice day!
 ```
 
@@ -90,9 +107,11 @@ $ ggcode scroll remove
 ```bash
 # Keep scroll directory
 $ ggcode scroll remove --name readme
+
 [SUCCESS] Keep in touch.
 
 # Also remove scroll directory
 $ ggcode scroll remove --name readme --force
+
 [SUCCESS] Take care.
 ```
